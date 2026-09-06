@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Flipkart Automation Suite" parallel="methods" thread-count="1" verbose="2">
+
+    <parameter name="browser" value="chrome"/>
+
+    <listeners>
+        <listener class-name="com.flipkart.automation.tests.TestListener"/>
+    </listeners>
+
+    <test name="Flipkart E2E Tests">
+        <classes>
+            <class name="com.flipkart.automation.tests.AuthenticationTests"/>
+            <class name="com.flipkart.automation.tests.ProductSearchTests"/>
+            <class name="com.flipkart.automation.tests.ProductDetailTests"/>
+            <class name="com.flipkart.automation.tests.ShoppingCartTests"/>
+            <class name="com.flipkart.automation.tests.CheckoutTests"/>
+            <class name="com.flipkart.automation.tests.OrderManagementTests"/>
+        </classes>
+    </test>
+
+</suite>

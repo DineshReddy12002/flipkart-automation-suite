@@ -1,0 +1,13 @@
+target/
+.tools/
+.classpath
+.project
+.settings/
+test-output/
+logs/
+screenshots/
+*.log
+.DS_Store
+.idea/
+*.iml
+flipkart-chrome-profile-*
